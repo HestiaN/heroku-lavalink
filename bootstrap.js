@@ -72,7 +72,7 @@ fetch("https://api.github.com/repos/freyacodes/Lavalink/releases/latest")
             priorVersion[0] = priorVersion[0].replace("v","")
             priorVersion = priorVersion.join(".")
 
-            let priorDL_URL = `https://github.com/freyacodes/Lavalink/releases/download/${priorVersion}/Lavalink.jar`
+            let priorDL_URL = `https://ci.fredboat.com/repository/download/Lavalink_Build/8871:id/Lavalink.jar`
             console.log("Found: "+priorDL_URL)
             download(priorDL_URL, "./Lavalink.jar", startLavalink)
         }
