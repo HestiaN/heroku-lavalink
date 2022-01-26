@@ -46,7 +46,7 @@ function startLavalink() {
 
 
 console.log("Fetching latest Lavalink.jar url...")
-fetch("https://ci.fredboat.com/repository/download/Lavalink_Build/9322:id/Lavalink.jar")
+fetch("https://ci.fredboat.com/repository/download/Lavalink_Build/9322:id/Lavalink.jar?guest=1")
     .then(res => res.json())
     .then(json => {
         if(json.assets[0] && json.assets[0].browser_download_url){
